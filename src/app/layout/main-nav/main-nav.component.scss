@@ -1,0 +1,26 @@
+nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+
+img {
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.image-and-toggle{
+    position: absolute;
+    padding: 10px;
+    left: 20px;
+}
+
+
+
