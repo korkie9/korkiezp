@@ -1,1 +1,36 @@
-<p>contact works!</p>
+<form [formGroup]="formQuery" (ngSubmit)="onSubmit()">
+  <div class="contact-form">
+    <h2><strong>Contact Us</strong></h2>
+    <div class="form-inputs">
+      <div class="names-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Surname</mat-label>
+          <input matInput formControlName="surname"/>
+        </mat-form-field>
+      </div>
+
+      <mat-form-field appearance="outline" class="form-cat">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email"/>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="form-cat">
+        <mat-label>Subject</mat-label>
+        <input matInput formControlName="subject"/>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="form-cat">
+        <textarea matInput placeholder="Message" formControlName="message"></textarea>
+      </mat-form-field>
+
+      <button mat-raised-button class="col-10 btn-success" type="submit" [disabled]="!formQuery.valid">
+        Submit
+      </button>
+    </div>
+  </div>
+</form>

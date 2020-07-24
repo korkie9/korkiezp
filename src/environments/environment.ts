@@ -6,14 +6,14 @@ export const environment = {
   production: false
 };
 export const firebaseConfig = {
-  apiKey: "AIzaSyC52GGUr47vl1oI_-rOwZQ8hzPl0osPlEk",
-  authDomain: "korkiezp-ceb03.firebaseapp.com",
-  databaseURL: "https://korkiezp-ceb03.firebaseio.com",
-  projectId: "korkiezp-ceb03",
-  storageBucket: "korkiezp-ceb03.appspot.com",
-  messagingSenderId: "933427513130",
-  appId: "1:933427513130:web:1fde7da523ca3fce050053",
-  measurementId: "G-9NGNTXJSV2"
+  apiKey: "AIzaSyAWQPxuYA7FJHTUghn_dsqB2KDiVYY3GxE",
+  authDomain: "korkiezp-71ffc.firebaseapp.com",
+  databaseURL: "https://korkiezp-71ffc.firebaseio.com",
+  projectId: "korkiezp-71ffc",
+  storageBucket: "korkiezp-71ffc.appspot.com",
+  messagingSenderId: "323836273667",
+  appId: "1:323836273667:web:4b4e13bb07a2ff71e6da36",
+  measurementId: "G-MZNEKKGKS4"
 };
 /*
  * For easier debugging in development mode, you can import the following file

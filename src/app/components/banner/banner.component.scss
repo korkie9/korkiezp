@@ -1,0 +1,22 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: honeydew;
+    height: 200px;
+}
+
+.banner h3 {
+    color: blue;
+}
+
+.bannertwo {
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}

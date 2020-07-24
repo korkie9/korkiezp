@@ -1,0 +1,58 @@
+.techcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+// .corevaluescont {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   text-align: center;
+//   width: 40vw;
+//   height: 100px;
+//   align-items: center;
+//   margin: 10px;
+// }
+
+.textblock {
+  font-family: Tahoma;
+  font-size: 17px;
+  color: #001a4d;
+  text-shadow: 2px 2px #ccddff;
+}
+
+div .textblock {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: 7px;
+}
+
+.cardblock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+p .textblock {
+  margin: 5px;
+}
+
+.textblock h2 {
+  text-shadow: none;
+  color: black;
+}
+
+// .img-block{
+//     background-image: url(../../../assets/steth.jpg);
+//     width: 80vw;
+//     height: 500px;
+// }

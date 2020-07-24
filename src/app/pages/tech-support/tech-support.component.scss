@@ -1,0 +1,32 @@
+.tech-cont {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.core-values-cont{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 40vw;
+    height: 10rem;
+    align-items: center;
+    margin: 10px;
+
+}
+
+// app-core-structures-card {
+//     margin: 5px;
+// }
+
+p{
+    margin: 10px;
+    width: 60vw;
+}

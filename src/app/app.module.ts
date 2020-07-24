@@ -17,6 +17,13 @@ import { TechSupportComponent } from './pages/tech-support/tech-support.componen
 import { BannerComponent } from './components/banner/banner.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoreStructuresComponent } from './components/core-structures/core-structures.component';
+import { MaterialModule } from './modules/material/material.module';
+import { CoreStructuresCardComponent } from './components/core-structures-card/core-structures-card.component';
+import { StructuresCardComponent } from './components/structures-card/structures-card.component';
+import { TechComponent } from './pages/tech/tech.component';
+import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -28,7 +35,11 @@ import { AdminComponent } from './pages/admin/admin.component';
     TechSupportComponent,
     BannerComponent,
     DashboardComponent,
-    AdminComponent
+    AdminComponent,
+    CoreStructuresComponent,
+    CoreStructuresCardComponent,
+    StructuresCardComponent,
+    TechComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +47,9 @@ import { AdminComponent } from './pages/admin/admin.component';
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
-    AngularFireStorageModule // storage
+    AngularFireStorageModule, BrowserAnimationsModule, // storage
+    ReactiveFormsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
