@@ -4,6 +4,8 @@ import {
   FormBuilder,
   Validators
 } from '@angular/forms';
+import { MailService } from 'src/app/services/mail.service';
+import { Mail } from 'src/app/_models/models';
 
 @Component({
   selector: 'app-contact',
@@ -29,7 +31,7 @@ export class ContactComponent implements OnInit {
     return this.formQuery.get('message');
   }
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private mailService: MailService) {}
 
   ngOnInit(): void {
     this.formQuery = this.fb.group({
@@ -56,6 +58,14 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit() {
+    const mail: Mail = {
+      name: this.formName.value,
+      surname: this.formSurname.value,
+      subject: this.formSubject.value,
+      message: this.formMessage.value,
+      email: this.formEmail.value
+    }
+    this.mailService.sendMail(mail);
     console.log(
       `${this.formName.value} ${this.formSurname.value} with email ${this.formEmail.value} said ${this.formMessage.value} regarding ${this.formSubject.value}`
     );

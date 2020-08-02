@@ -9,7 +9,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { environment, firebaseConfig } from 'src/environments/environment';
+import { AngularFireFunctionsModule } from '@angular/fire/functions';
+import { environment } from 'src/environments/environment';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -23,7 +24,8 @@ import { MaterialModule } from './modules/material/material.module';
 import { CoreStructuresCardComponent } from './components/core-structures-card/core-structures-card.component';
 import { StructuresCardComponent } from './components/structures-card/structures-card.component';
 import { TechComponent } from './pages/tech/tech.component';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -44,10 +46,11 @@ import { ReactiveFormsModule } from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
     AngularFireStorageModule, BrowserAnimationsModule, // storage
+    AngularFireFunctionsModule,
     ReactiveFormsModule,
     MaterialModule
   ],
